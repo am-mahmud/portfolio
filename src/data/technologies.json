@@ -1,0 +1,35 @@
+{
+  "Language": [
+    { "name": "JavaScript", "image": "/images/tech/javascript.svg" },
+    { "name": "TypeScript", "image": "/images/tech/typescript.svg" },
+    { "name": "Java", "image": "/images/tech/java.svg" },
+    { "name": "Python", "image": "/images/tech/python.svg" },
+    { "name": "PHP", "image": "/images/tech/php.svg" },
+    { "name": "C", "image": "/images/tech/c.svg" }
+  ],
+  "Framework": [
+    { "name": "React", "image": "/images/tech/react.svg" },
+    { "name": "Next.js", "image": "/images/tech/nextjs_icon_dark.svg" },
+    { "name": "Express", "image": "/images/tech/express.svg" }
+  ],
+  "Library": [
+    { "name": "HTML5", "image": "/images/tech/html5.svg" },
+    { "name": "CSS", "image": "/images/tech/css_old.svg" }
+  ],
+  "Database": [
+    { "name": "MongoDB", "image": "/images/tech/mongodb.svg" },
+    { "name": "Node.js", "image": "/images/tech/nodejs.svg" }
+  ],
+  "Development Tool": [
+    { "name": "Git", "image": "/images/tech/git.svg" },
+    { "name": "VS Code", "image": "/images/tech/vscode.svg" }
+  ],
+  "DevOps": [
+    { "name": "GitHub", "image": "/images/tech/github_light.svg" },
+    { "name": "Linux", "image": "/images/tech/linux.svg" }
+  ],
+  "APIs & Integration": [
+    { "name": "OpenAPI", "image": "/images/tech/openapi.svg" },
+    { "name": "Postman", "image": "/images/tech/postman.svg" }
+  ]
+}

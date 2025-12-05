@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Nerd Club — Researcher Community Platform",
+    "year": "2025",
+    "description": "Nerd Club is a modern, interactive platform designed for researchers to ask questions, share insights, and engage with a like-minded research community. Built with Next.js, MongoDB, and NextAuth, it provides a fast, secure, and seamless user experience.",
+    "image": "/images/projects/nerdclub.jpg",
+    "technologies": [
+      {
+        "name": "Next.js",
+        "icon": "/images/tech/nextdotjs.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/images/tech/react.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/images/tech/mongodb.svg"
+      },
+      {
+        "name": "Node.js",
+        "icon": "/images/tech/nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "icon": "/images/tech/express.svg"
+      }
+    ],
+    "github": "https://github.com/am-mahmud/nerd-club",
+    "live": "https://nerd-club-am.vercel.app/",
+    "featured": true,
+    "category": "Web"
+  },
+  {
+    "id": 2,
+    "title": "GameHub – Retro Gaming Platform",
+    "year": "2025",
+    "description": "GameHub is a modern retro-styled gaming platform built with React, Vite, Tailwind CSS, and Firebase. It features fast routing, secure authentication, smooth animations, game listings, and an immersive UI inspired by classic arcade themes.",
+    "image": "/images/projects/gamehub.jpg",
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "/images/tech/react.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/images/tech/javascript.svg"
+      },
+      {
+        "name": "Node.js",
+        "icon": "/images/tech/nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "icon": "/images/tech/express.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/images/tech/mongodb.svg"
+      }
+    ],
+    "github": "https://github.com/am-mahmud/retro-gamehub",
+    "live": "https://gamehub-am.netlify.app/",
+    "featured": true,
+    "category": "Game"
+  }
+]
