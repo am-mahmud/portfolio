@@ -2,14 +2,16 @@ import Image from 'next/image';
 import {
   FaGithub,
   FaLinkedin,
-  FaPhone,
   FaEnvelope,
-  FaFileAlt
+  FaFileAlt,
+  FaWhatsapp
 } from 'react-icons/fa';
-import { IoLocationSharp, IoSunnyOutline, IoInformationCircleOutline } from 'react-icons/io5';
+import { IoLocationSharp } from 'react-icons/io5';
 import personalData from '@/data/personal.json';
 
 export default function Hero() {
+  const whatsappLink = `https://wa.me/${personalData.phone.replace(/\D/g, '')}`;
+
   return (
     <section className="mt-6 mb-10 px-4 md:px-0">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-16">
@@ -34,17 +36,18 @@ export default function Hero() {
             }, {
               icon: <FaLinkedin className="w-5 h-5 text-gray-700" />, link: personalData.social.linkedin
             }, {
-              icon: <FaPhone className="w-5 h-5 text-gray-700" />, link: `tel:${personalData.phone}`
+              icon: <FaWhatsapp className="w-5 h-5 text-gray-700" />, link: whatsappLink
             }, {
               icon: <FaEnvelope className="w-5 h-5 text-gray-700" />, link: `mailto:${personalData.email}`
             }, {
-              icon: <FaFileAlt className="w-5 h-5 text-gray-700" />, link: `/resume.pdf`
+              icon: <FaFileAlt className="w-5 h-5 text-gray-700" />, link: `/resume.pdf`, download: true
             }].map((item, index) => (
               <a
                 key={index}
                 href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={item.download ? undefined : "_blank"}
+                rel={item.download ? undefined : "noopener noreferrer"}
+                download={item.download ? "resume.pdf" : undefined}
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
               >
                 {item.icon}
@@ -55,17 +58,11 @@ export default function Hero() {
          
           <div className="flex justify-center md:justify-start gap-3 flex-wrap">
             <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <span className="text-sm sm:text-base">BD</span>
+              <span className="text-sm sm:text-base font-semibold">BD</span>
             </button>
-             <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <span className="text-sm sm:text-base">EN</span>
+            <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
+              <span className="text-sm sm:text-base font-semibold">EN</span>
             </button>
-            {/* <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <IoSunnyOutline className="w-5 h-5 text-gray-700" />
-            </button> */}
-            {/* <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
-              <IoInformationCircleOutline className="w-5 h-5 text-gray-700" />
-            </button> */}
           </div>
         </div>
 
@@ -85,4 +82,3 @@ export default function Hero() {
     </section>
   );
 }
-
