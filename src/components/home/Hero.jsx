@@ -1,229 +1,82 @@
-// import Image from 'next/image';
-// import { 
-//   FaGithub, 
-//   FaLinkedin, 
-//   FaPhone, 
-//   FaEnvelope, 
-//   FaFileAlt 
-// } from 'react-icons/fa';
-// import { IoLocationSharp, IoSunnyOutline, IoInformationCircleOutline } from 'react-icons/io5';
-// import personalData from '@/data/personal.json';
-
-// export default function Hero() {
-//   return (
-//     <section className="mt-15 mb-10">
-//       <div className="flex flex-col md:flex-row items-start justify-between gap-12">
-//         <div className="flex-1">
-//           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
-//             {personalData.name}
-//           </h1>
-//           <p className="text-lg text-gray-600 mb-4">
-//             {personalData.title}
-//           </p>
-          
-//           <div className="flex items-center gap-2 text-gray-600 mb-8">
-//             <IoLocationSharp className="w-4 h-4" />
-//             <span className="text-sm">{personalData.location}</span>
-//           </div>
-
-//           <div className="flex gap-3 mb-3">
-//             <a
-//               href={personalData.social.github}
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="GitHub"
-//             >
-//               <FaGithub className="w-5 h-5 text-gray-700" />
-//             </a>
-//             <a
-//               href={personalData.social.linkedin}
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="LinkedIn"
-//             >
-//               <FaLinkedin className="w-5 h-5 text-gray-700" />
-//             </a>
-//             <a
-//               href={`tel:${personalData.phone}`}
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Phone"
-//             >
-//               <FaPhone className="w-5 h-5 text-gray-700" />
-//             </a>
-//             <a
-//               href={`mailto:${personalData.email}`}
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Email"
-//             >
-//               <FaEnvelope className="w-5 h-5 text-gray-700" />
-//             </a>
-//             <a
-//               href="/resume.pdf"
-//               target="_blank"
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Resume"
-//             >
-//               <FaFileAlt className="w-5 h-5 text-gray-700" />
-//             </a>
-//           </div>
-
-//           <div className="flex gap-3">
-//             <button
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Language"
-//             >
-//               <span className="text-base">BD</span> 
-//             </button>
-//             <button
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Theme"
-//             >
-//               <IoSunnyOutline className="w-5 h-5 text-gray-700" />
-//             </button>
-//             <button
-//               className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-//               aria-label="Info"
-//             >
-//               <IoInformationCircleOutline className="w-5 h-5 text-gray-700" />
-//             </button>
-//           </div>
-//         </div>
-
-//         <div className="shrink-0">
-//           <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl">
-//             <Image
-//               src="/images/profile.png"
-//               alt={personalData.name}
-//               width={208}
-//               height={208}
-//               className="object-cover w-full h-full"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-'use client';
-
 import Image from 'next/image';
-import { useState } from 'react';
-import { 
-  FaGithub, 
-  FaLinkedin, 
-  FaEnvelope, 
-  FaFileAlt,
-  FaWhatsapp 
+import {
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaEnvelope,
+  FaFileAlt
 } from 'react-icons/fa';
-import { IoLocationSharp, IoSunnyOutline, IoMoonOutline, IoInformationCircleOutline } from 'react-icons/io5';
+import { IoLocationSharp, IoSunnyOutline, IoInformationCircleOutline } from 'react-icons/io5';
 import personalData from '@/data/personal.json';
 
 export default function Hero() {
-  const [isDark, setIsDark] = useState(false);
-
-  const whatsappLink = `https://wa.me/${personalData.phone.replace(/\D/g, '')}`;
-
   return (
-    <section className="mt-15 mb-10">
-      <div className="flex flex-col md:flex-row items-start justify-between gap-12">
-        <div className="flex-1">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
+    <section className="mt-10 mb-10 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-16">
+       
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-3">
             {personalData.name}
           </h1>
-          <p className="text-lg text-gray-600 mb-4">
+          <p className="text-base sm:text-lg text-gray-600 mb-4">
             {personalData.title}
           </p>
-          
-          <div className="flex items-center gap-2 text-gray-600 mb-8">
+
+          <div className="flex items-center justify-center md:justify-start gap-2 text-gray-600 mb-6">
             <IoLocationSharp className="w-4 h-4" />
             <span className="text-sm">{personalData.location}</span>
           </div>
 
-          {/* Social Links */}
-          <div className="flex gap-3 mb-3">
-            <a
-              href={personalData.social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="GitHub"
-            >
-              <FaGithub className="w-5 h-5 text-gray-700" />
-            </a>
-            <a
-              href={personalData.social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin className="w-5 h-5 text-gray-700" />
-            </a>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="WhatsApp"
-            >
-              <FaWhatsapp className="w-5 h-5 text-gray-700" />
-            </a>
-            <a
-              href={`mailto:${personalData.email}`}
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="Email"
-            >
-              <FaEnvelope className="w-5 h-5 text-gray-700" />
-            </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="Resume"
-            >
-              <FaFileAlt className="w-5 h-5 text-gray-700" />
-            </a>
+         
+          <div className="flex justify-center md:justify-start gap-3 mb-4 flex-wrap">
+            {[{
+              icon: <FaGithub className="w-5 h-5 text-gray-700" />, link: personalData.social.github
+            }, {
+              icon: <FaLinkedin className="w-5 h-5 text-gray-700" />, link: personalData.social.linkedin
+            }, {
+              icon: <FaPhone className="w-5 h-5 text-gray-700" />, link: `tel:${personalData.phone}`
+            }, {
+              icon: <FaEnvelope className="w-5 h-5 text-gray-700" />, link: `mailto:${personalData.email}`
+            }, {
+              icon: <FaFileAlt className="w-5 h-5 text-gray-700" />, link: `/resume.pdf`
+            }].map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
+              >
+                {item.icon}
+              </a>
+            ))}
           </div>
 
-          {/* Utility Buttons */}
-          <div className="flex gap-3">
-            <button
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="Language"
-            >
-              <span className="text-2xl">BD</span>
+         
+          <div className="flex justify-center md:justify-start gap-3 flex-wrap">
+            <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
+              <span className="text-sm sm:text-base">BD</span>
             </button>
-            <button
-              onClick={() => setIsDark(!isDark)}
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="Theme"
-            >
-              {isDark ? (
-                <IoSunnyOutline className="w-5 h-5 text-gray-700" />
-              ) : (
-                <IoMoonOutline className="w-5 h-5 text-gray-700" />
-              )}
+             <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
+              <span className="text-sm sm:text-base">EN</span>
             </button>
-            <button
-              className="w-11 h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
-              aria-label="Info"
-            >
+            {/* <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
+              <IoSunnyOutline className="w-5 h-5 text-gray-700" />
+            </button> */}
+            {/* <button className="w-10 h-10 sm:w-11 sm:h-11 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
               <IoInformationCircleOutline className="w-5 h-5 text-gray-700" />
-            </button>
+            </button> */}
           </div>
         </div>
 
+      
         <div className="shrink-0">
-          <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl">
+          <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
             <Image
               src="/images/profile.png"
               alt={personalData.name}
-              width={208}
-              height={208}
+              width={260}
+              height={260}
               className="object-cover w-full h-full"
             />
           </div>
@@ -232,3 +85,4 @@ export default function Hero() {
     </section>
   );
 }
+

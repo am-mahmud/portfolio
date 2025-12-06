@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { X, Plus } from 'lucide-react';
+import { X, Menu } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,32 +11,32 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: 'Portfolio', href: '/' },
-    { name: 'Journal', href: '/journal' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Tech', href: '#tech' }
   ];
 
   return (
-    <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
+    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
       <button
         onClick={toggleMenu}
-        className="bg-gray-800 rounded-full px-6 py-2 flex items-center gap-2 transition-all duration-300"
+        className="bg-gray-800 rounded-full px-4 py-1.5 flex items-center gap-2 transition-all duration-300"
       >
-        <span className="font-medium text-white">Menu</span>
+        <span className="font-medium text-white text-sm">Menu</span>
         {isOpen ? (
-          <X className="w-5 h-5 text-white" />
+          <X className="w-4 h-4 text-white" />
         ) : (
-          <Plus className="w-5 h-5 text-white" />
+          <Menu className="w-4 h-4 text-white" />
         )}
       </button>
 
-     
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-gray-800 rounded-full px-8 py-2 flex gap-6">
+        <div className="absolute top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 rounded-full px-6 py-1.5 flex gap-4 whitespace-nowrap">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-white hover:text-gray-900 transition-colors duration-200 font-medium"
+              className="text-white hover:text-gray-300 transition-colors duration-200 font-medium text-sm"
               onClick={() => setIsOpen(false)}
             >
               {link.name}

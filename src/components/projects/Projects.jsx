@@ -1,4 +1,3 @@
-// src/components/home/Projects.jsx
 'use client';
 import { useState } from 'react';
 import ProjectCard from '@/components/projects/ProjectCard';
@@ -15,10 +14,10 @@ export default function Projects() {
   });
 
   return (
-    <section className='mt-10'>
-      <h2 className="text-4xl font-bold text-gray-900 mb-8">Projects</h2>
+    <section id='projects' className='mt-10 px-2 md:px-0'>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">Projects</h2>
       
-      <div className="flex gap-3 mb-12 flex-wrap">
+      <div className="flex gap-3 mb-10">
         {filters.map((filter) => (
           <button
             key={filter}

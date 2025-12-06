@@ -4,10 +4,10 @@ import hobbies from '@/data/hobbies.json';
 
 export default function Hobbies() {
   return (
-    <section className="mt-10">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Hobbies</h2>
+    <section className="mt-10 px-2 md:px-0">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">Hobbies</h2>
       
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
         {hobbies.map((hobby, index) => (
           <div
             key={index}

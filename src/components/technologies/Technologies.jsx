@@ -11,10 +11,10 @@ export default function Technologies() {
     const filteredTech = tech[activeFilter] || [];
 
     return (
-        <section className="mt-10">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">Technologies</h2>
+        <section id='tech' className="mt-10 px-2 md:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">Technologies</h2>
 
-            <div className="flex gap-3 mb-12 flex-wrap">
+            <div className="flex gap-3 mb-12 flex-wrap ">
                 {filters.map((filter) => (
                     <button
                         key={filter}
