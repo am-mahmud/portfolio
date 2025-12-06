@@ -84,5 +84,48 @@
       "Implement achievement and leaderboard system",
       "Expand game library with more titles"
     ]
+  },
+  {
+    "id": 3,
+    "title": "UMS – Billing Platform",
+    "year": "2025",
+    "description": "A full-stack web application designed to manage and track various utility bills — including electricity, gas, water, and internet.",
+    "image": "/images/projects/ums.png",
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "/images/tech/react.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/images/tech/javascript.svg"
+      },
+      {
+        "name": "Node.js",
+        "icon": "/images/tech/nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "icon": "/images/tech/express.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/images/tech/mongodb.svg"
+      }
+    ],
+    "github": "https://github.com/am-mahmud/ums-client",
+    "live": "https://utility-management-system.netlify.app/",
+    "featured": true,
+    "category": "Web",
+    "challenges": [
+      "Creating responsive retro UI across devices",
+      "Implementing smooth game loading without lag",
+      "Managing game states and user progress"
+    ],
+    "improvements": [
+      "Add real time bill tracking system",
+      "Implement points system",
+      "Multiple payment method"
+    ]
   }
 ]
