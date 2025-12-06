@@ -4,9 +4,9 @@ import { FaGithub, FaPlay } from 'react-icons/fa';
 export default function ProjectCard({ project }) {
   return (
     <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="flex flex-col lg:flex-row lg:h-64">
+      <div className="flex flex-col lg:flex-row lg:h-auto">
         
-       
+  
         <div className="w-full lg:w-7/12 p-4 sm:p-6 flex flex-col justify-between">
           <div>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4 mb-3">
@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
               </span>
             </div>
 
-           
+       
             <div className="flex gap-2 mb-3 sm:mb-4 flex-wrap items-center">
               {project.technologies.map((tech, index) => (
                 <div
@@ -38,12 +38,12 @@ export default function ProjectCard({ project }) {
             </div>
           </div>
 
-         
-          <p className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
+        
+          <p className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
             {project.description}
           </p>
 
-         
+      
           <div className="flex flex-wrap gap-2 items-center">
             {project.github && (
               <a
@@ -71,7 +71,7 @@ export default function ProjectCard({ project }) {
         </div>
 
        
-        <div className="w-full lg:w-5/12 flex items-center justify-center p-3 sm:p-4 lg:p-0 lg:items-end lg:justify-end overflow-hidden min-h-48 lg:min-h-0">
+        <div className="w-full lg:w-5/12 flex items-center justify-center p-3 sm:p-4 lg:p-0 lg:items-end lg:justify-end overflow-hidden min-h-48 lg:min-h-64">
           <div className="relative w-full h-full min-h-40 lg:min-h-64">
             <Image
               src={project.image}
