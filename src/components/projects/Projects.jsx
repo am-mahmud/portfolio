@@ -15,7 +15,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16">
+    <section className='mt-10'>
       <h2 className="text-4xl font-bold text-gray-900 mb-8">Projects</h2>
       
       <div className="flex gap-3 mb-12 flex-wrap">

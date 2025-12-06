@@ -1,11 +1,7 @@
 {
   "Language": [
     { "name": "JavaScript", "image": "/images/tech/javascript.svg" },
-    { "name": "TypeScript", "image": "/images/tech/typescript.svg" },
-    { "name": "Java", "image": "/images/tech/java.svg" },
-    { "name": "Python", "image": "/images/tech/python.svg" },
-    { "name": "PHP", "image": "/images/tech/php.svg" },
-    { "name": "C", "image": "/images/tech/c.svg" }
+    { "name": "Python", "image": "/images/tech/python.svg" }
   ],
   "Framework": [
     { "name": "React", "image": "/images/tech/react.svg" },
@@ -29,7 +25,6 @@
     { "name": "Linux", "image": "/images/tech/linux.svg" }
   ],
   "APIs & Integration": [
-    { "name": "OpenAPI", "image": "/images/tech/openapi.svg" },
     { "name": "Postman", "image": "/images/tech/postman.svg" }
   ]
 }

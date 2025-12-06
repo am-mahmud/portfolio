@@ -1,6 +1,7 @@
 import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 import Projects from "@/components/projects/Projects";
+import Technologies from "@/components/technologies/Technologies";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero></Hero>
       <About></About>
       <Projects></Projects>
+      <Technologies></Technologies>
         
     </div>
   );
