@@ -10,9 +10,10 @@
   },
   "about": {
     "paragraphs": [
-      "Hello! I'm a passionate developer with a deep interest in technology and all things related to computing. Over the years, I've dedicated myself creating a variety of personal projects, driven by my passion for learning and exploring new technologies.",
-      "I'm proficient in full-stack development and DevOps, with a particular focus on Vue.js and Nuxt for web development. On the DevOps side, I have experience with tools like GitHub Actions, Python, Automation, Linux, Terraform, and AWS—skills I've been improving through both personal projects and professional experience.",
-      "I hold a BUT in Computer Science from the University of Lyon 1 and am currently pursuing a three-year engineering degree at CPE Lyon, specializing in Computer Engineering. I completed an apprenticeship at Sanofi as a DevOps Developer during my final year of the BUT. Sanofi has continued to support me by hiring me as a DevOps Cloud Engineer throughout my engineering studies. This role is enhancing my skills in DevOps, particularly with GitHub Actions, Python, Terraform, and AWS. I also recently earned the GitHub Foundations certification, demonstrating my knowledge of GitHub."
+      "Hello! I'm a passionate full-stack developer with strong expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and modern frontend technologies. I love building fast, responsive, and user-friendly interfaces using React and Next.js, along with styling tools like Tailwind CSS and CSS3.",
+      "My experience spans across the full MERN ecosystem—ranging from creating clean and dynamic frontends to designing efficient REST APIs and managing database workflows with MongoDB and Node/Express. I enjoy working on both frontend experiences and backend logic to deliver complete, functional applications.",
+      "Alongside my MERN and frontend background, I'm currently working with backend development in Go (Golang) and exploring cloud technologies. This includes learning server-side architecture, deployment workflows, and improving my understanding of scalable cloud environments.",
+      "I'm always eager to learn, explore new tools, and push my skills further through real-world projects. My goal is to keep growing as a full-stack and cloud-focused developer while building meaningful and impactful software."
     ]
   }
 }

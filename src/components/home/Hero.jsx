@@ -11,7 +11,7 @@ import personalData from '@/data/personal.json';
 
 export default function Hero() {
   return (
-    <section className="mt-10 mb-10 px-4 md:px-0">
+    <section className="mt-6 mb-10 px-4 md:px-0">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-16">
        
         <div className="flex-1 text-center md:text-left">
