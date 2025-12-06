@@ -30,7 +30,17 @@
     "github": "https://github.com/am-mahmud/nerd-club",
     "live": "https://nerd-club-am.vercel.app/",
     "featured": true,
-    "category": "Web"
+    "category": "Web",
+    "challenges": [
+      "Implementing real-time updates for community interactions",
+      "Optimizing database queries for fast performance",
+      "Managing user authentication and authorization securely"
+    ],
+    "improvements": [
+      "Add advanced search and filtering capabilities",
+      "Implement AI-powered recommendations for researchers",
+      "Create mobile application for better accessibility"
+    ]
   },
   {
     "id": 2,
@@ -63,6 +73,16 @@
     "github": "https://github.com/am-mahmud/retro-gamehub",
     "live": "https://gamehub-am.netlify.app/",
     "featured": true,
-    "category": "Game"
+    "category": "Game",
+    "challenges": [
+      "Creating responsive retro UI across devices",
+      "Implementing smooth game loading without lag",
+      "Managing game states and user progress"
+    ],
+    "improvements": [
+      "Add multiplayer gaming capabilities",
+      "Implement achievement and leaderboard system",
+      "Expand game library with more titles"
+    ]
   }
 ]
